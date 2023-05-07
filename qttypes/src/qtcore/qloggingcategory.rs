@@ -15,7 +15,7 @@ cpp_class!(
 impl QLoggingCategory {
     pub fn set_filter_rules(rules: QString) {
         cpp!(unsafe [rules as "QString"] {
-            QLoggingCategory::setFilterRules(rules)
+            QLoggingCategory::setFilterRules(rules);
         })
     }
 }
